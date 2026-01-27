@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from "../assets/IHIET.png"
+import Img from "../assets/academic.png"
 
 const Recent_publications = () => {
   return (
