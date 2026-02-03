@@ -11,11 +11,11 @@ const Phdstudents = () => {
 
           <div className="menu-part grid lg:grid-cols-2 md:grid-cols-2 gap-x-[100px]">
             <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
                 <img
                   src={Rifat}
                   alt="Rifat Rahman Khan"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <h2>Rifat Rahman Khan</h2>
@@ -25,11 +25,11 @@ const Phdstudents = () => {
             </div>
 
             <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
                 <img
                   src={Jiayin}
                   alt="Jiayin Huang"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <h2>Jiayin Huang</h2>
