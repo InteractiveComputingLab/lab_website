@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 import Slider from "react-slick";
-import AnnualLunch from "../assets/annual_lunch.jpeg"
-import Assets2025 from "../assets/assets2025.jpg"
-import { MdKeyboardArrowRight } from "react-icons/md";
+import ExperimentHandwriting from "../assets/experiment_handwriting.png";
+import IFFA from "../assets/IFFA.png";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
-
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -26,7 +25,7 @@ const Banner = () => {
           dots: true,
           autoplay: true,
           autoplaySpeed: 2000,
-        }
+        },
       },
       {
         breakpoint: 992,
@@ -37,7 +36,7 @@ const Banner = () => {
           dots: true,
           autoplay: true,
           autoplaySpeed: 2000,
-        }
+        },
       },
       {
         breakpoint: 768,
@@ -47,7 +46,7 @@ const Banner = () => {
           initialSlide: 1,
           autoplay: true,
           autoplaySpeed: 2000,
-        }
+        },
       },
       {
         breakpoint: 640,
@@ -56,7 +55,7 @@ const Banner = () => {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
-        }
+        },
       },
       {
         breakpoint: 427,
@@ -65,39 +64,44 @@ const Banner = () => {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
-        }
+        },
       },
     ],
-    appendDots: dots => (
+    appendDots: (dots) => (
       <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
+        <ul style={{ margin: "0px" }}>{dots}</ul>
       </div>
     ),
-    customPaging: () => (
-      <div className='w-3 h-3 rounded-full'></div>
-    )
+    customPaging: () => <div className="w-3 h-3 rounded-full"></div>,
   };
 
   return (
-    <>
-      <div className='container mx-auto'>
-        <div className='Banner'>
-          <h1>Welcome to the Interactive Computing Lab at Stevens</h1>
-        </div>
-
-        <div className="w-full img-width overflow-hidden object-cover">
-          <Slider {...settings}>
-            <div>
-              <img src={AnnualLunch} alt="Annual Lunch" />
-            </div>
-            <div>
-              <img src={Assets2025} alt="Assets 2025" />
-            </div>
-          </Slider>
-        </div>
+    <div className="container mx-auto">
+      <div className="Banner">
+        <h1>Welcome to the Interactive Computing Lab at Stevens</h1>
       </div>
-    </>
-  )
-}
 
-export default Banner
+      <div className="w-full overflow-hidden">
+        <Slider {...settings}>
+          <div className="w-full aspect-[892/344] overflow-hidden">
+            <img
+              className="w-full h-full object-cover object-center block"
+              src={ExperimentHandwriting}
+              alt="Experiment Handwriting"
+            />
+          </div>
+
+          <div className="w-full aspect-[892/344] overflow-hidden">
+            <img
+              className="w-full h-full object-cover object-[50%_15%] block"
+              src={IFFA}
+              alt="IFFA"
+            />
+          </div>
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
