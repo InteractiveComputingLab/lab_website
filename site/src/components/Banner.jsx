@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import ExperimentHandwriting from "../assets/experiment_handwriting.png";
 import IFFA from "../assets/IFFA.png";
-import AIEmotion from "../assets/AI_emotion.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -62,7 +61,6 @@ const Banner = () => {
         <Slider {...settings}>
           <Slide src={ExperimentHandwriting} alt="Experiment Handwriting" />
           <Slide src={IFFA} alt="IFFA" />
-          <Slide src={AIEmotion} alt="AI Emotion" />
         </Slider>
       </div>
     </div>
