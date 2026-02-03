@@ -23,10 +23,10 @@ const Navbar = () => {
         <nav>
             <div className="flex justify-between px-10 bg- py-5 text-white">
                 <div>
-                <img className='h-10 w-auto md:h-12 lg:h-14 object-contain' src={Logo} alt="" />
+                <img className='h-10 w-auto md:h-13 lg:h-14 object-contain' src={Logo} alt="Logo of ICLab@stevensLogo of the Interactive Computing Lab @ Stevens" />
                 
                 </div>
-                <div>
+                <div className='pr-[10]'>
                 <ul className="flex gap-4">
                     <li><a href="#"><FaHome className='inline-block mx-1 mt-[-5px]'/>Home</a></li>
                     <li><a href="#"><IoDocumentTextSharp className='inline-block mx-1 mt-[-5px]'/>Publications</a></li>
