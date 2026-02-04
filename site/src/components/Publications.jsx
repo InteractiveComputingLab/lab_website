@@ -41,62 +41,64 @@ const publications = [
 
 const Publications = () => {
   return (
-    <main className="container mx-auto px-4 py-10">
-      <header className="text-center">
-        <h1 className="text-3xl font-semibold tracking-tight">
-          All Publications
-        </h1>
-      </header>
+    <main className="w-full">
+      <div className="w-full max-w-7xl mx-auto px-4 py-10">
+        <header className="text-center">
+          <h1 className="text-3xl font-semibold tracking-tight">
+            All Publications
+          </h1>
+        </header>
 
-      <ul className="mt-10 space-y-6" role="list">
-        {publications.map((pub) => (
-          <li
-            key={pub.title}
-            className="rounded-2xl overflow-hidden border border-black/10 bg-white"
-          >
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-[260px] shrink-0">
-                <img
-                  src={Img}
-                  alt=""
-                  aria-hidden="true"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+        <ul className="mt-10 space-y-6" role="list">
+          {publications.map((pub) => (
+            <li
+              key={pub.title}
+              className="rounded-2xl overflow-hidden border border-black/10 bg-white"
+            >
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-[260px] shrink-0">
+                  <img
+                    src={Img}
+                    alt=""
+                    aria-hidden="true"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-              <div className="flex-1 p-6 bg-gray-100">
-                <div className="flex flex-col gap-3">
-                  <h2 className="text-lg font-semibold leading-snug">
-                    <a
-                      href={pub.paperUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-4 decoration-black/30 hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50 rounded"
-                    >
-                      {pub.title}
-                    </a>
-                  </h2>
+                <div className="flex-1 p-6 bg-gray-100">
+                  <div className="flex flex-col gap-3">
+                    <h2 className="text-lg font-semibold leading-snug">
+                      <a
+                        href={pub.paperUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline underline-offset-4 decoration-black/30 hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50 rounded"
+                      >
+                        {pub.title}
+                      </a>
+                    </h2>
 
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    {pub.citation}
-                  </p>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {pub.citation}
+                    </p>
 
-                  <div className="pt-1">
-                    <a
-                      href={pub.paperUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50"
-                    >
-                      View paper
-                    </a>
+                    <div className="pt-1">
+                      <a
+                        href={pub.paperUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50"
+                      >
+                        View paper
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </main>
   );
 };
