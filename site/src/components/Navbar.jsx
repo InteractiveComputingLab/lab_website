@@ -1,55 +1,58 @@
-import React, { useState } from 'react'
-import Logo from "../assets/iclab_logo.png"
+import React, { useState } from "react";
+import Logo from "../assets/iclab_logo.png";
 import { FaHome } from "react-icons/fa";
 import { IoDocumentTextSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
-  const [state, setState] = useState(false);
-
-  const handleClick = () => {
-    setState(!state);
-  };
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <nav className="bg-black text-white">
-        <div className="flex items-center justify-between px-10 py-4">
-
-          {/* Logo */}
+    <nav className="bg-black text-white">
+      <div className="px-6 lg:px-10 py-4 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+        
+        {/* Top Row */}
+        <div className="flex items-center justify-between w-full lg:w-auto">
           <img
             src={Logo}
             alt="ICLab logo"
-            className="h-12 lg:h-14 w-auto object-contain"
+            className="h-[30px] sm:h-[30px] md:h-[35px] lg:h-[40px] xl:h-[40px] w-auto object-contain"
           />
 
-          {/* Navigation */}
-          <ul className="flex items-center gap-6">
-            <li>
-              <a href="#" className="flex items-center gap-1 hover:text-gray-300">
-                <FaHome /> Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="flex items-center gap-1 hover:text-gray-300">
-                <IoDocumentTextSharp /> Publications
-              </a>
-            </li>
-            <li>
-              <a href="#" className="flex items-center gap-1 hover:text-gray-300">
-                <FaPeopleGroup /> Lab Members
-              </a>
-            </li>
-          </ul>
+          {/* Hamburger */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="lg:hidden text-2xl"
+          >
+            {open ? <HiX /> : <HiMenu />}
+          </button>
         </div>
 
-        {state && (
-          <div className="h-80 bg-amber-800">
-            <h1>Hello</h1>
-          </div>
-        )}
-      </nav>
-    </>
+        {/* Menu */}
+        <ul
+          className={`flex flex-col lg:flex-row lg:items-center gap-6 mt-4 lg:mt-0 ${
+            open ? "flex" : "hidden"
+          } lg:flex`}
+        >
+          <li>
+            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <FaHome /> Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <IoDocumentTextSharp /> Publications
+            </a>
+          </li>
+          <li>
+            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <FaPeopleGroup /> Lab Members
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
