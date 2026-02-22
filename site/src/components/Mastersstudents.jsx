@@ -6,58 +6,66 @@ const Mastersstudents = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h1>Masters Student(s)</h1>
+          <h1 className="text-3xl font-semibold text-black mb-10">
+            Masters Student(s)
+          </h1>
 
-          <div className="menu-part grid lg:grid-cols-3 md:grid-cols-2 gap-x-[30px]">
-            <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+            <div className="shadow-lg rounded-2xl p-6 bg-white text-center">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Dawei Xu" className="w-full h-full object-contain" />
               </div>
-              <h2>Dawei Xu</h2>
-              <div className="details">
-                <p className="text-center">Research Assistant</p>
-              </div>
+              <h2 className="text-xl font-semibold text-black tracking-tight">
+                Dawei Xu
+              </h2>
+              <p className="text-gray-600 text-sm mt-2">
+                Research Assistant
+              </p>
             </div>
 
-            <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
+            <div className="shadow-lg rounded-2xl p-6 bg-white text-center">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Azizul Hoque" className="w-full h-full object-contain" />
               </div>
-              <h2>Azizul Hoque</h2>
-              <div className="details">
-                <p className="text-center">Research Assistant</p>
-              </div>
+              <h2 className="text-xl font-semibold text-black tracking-tight">
+                Azizul Hoque
+              </h2>
+              <p className="text-gray-600 text-sm mt-2">
+                Research Assistant
+              </p>
             </div>
 
-            <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
+            <div className="shadow-lg rounded-2xl p-6 bg-white text-center">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Srikala Sandu" className="w-full h-full object-contain" />
               </div>
-              <h2>Srikala Sandu</h2>
-              <div className="details">
-                <p className="text-center">Research Assistant</p>
-              </div>
+              <h2 className="text-xl font-semibold text-black tracking-tight">
+                Srikala Sandu
+              </h2>
+              <p className="text-gray-600 text-sm mt-2">
+                Research Assistant
+              </p>
             </div>
-          </div>
 
-          <div className="menu-part grid lg:grid-cols-3 md:grid-cols-2 gap-x-[30px]">
-            <div />
+            <div className="lg:col-span-1 md:hidden" />
 
-            <div className="menu shadow rounded-[20px] p-5 text-left sm:mb-[20px]">
-              <div className="w-full aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
+            <div className="shadow-lg rounded-2xl p-6 bg-white text-center">
+              <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img
                   src={Img}
                   alt="Simratkaur Manjindersingh Randhawa"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2>Simratkaur Manjindersingh Randhawa</h2>
-              <div className="details">
-                <p className="text-center">Research Assistant</p>
-              </div>
+              <h2 className="text-xl font-semibold text-black tracking-tight">
+                Simratkaur Manjindersingh Randhawa
+              </h2>
+              <p className="text-gray-600 text-sm mt-2">
+                Research Assistant
+              </p>
             </div>
 
-            <div />
           </div>
         </div>
       </div>
