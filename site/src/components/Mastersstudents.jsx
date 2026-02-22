@@ -6,9 +6,9 @@ const Mastersstudents = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h1 className="text-3xl font-semibold text-black mb-10">
+          <h2 className="text-3xl font-semibold text-black mb-10">
             Masters Student(s)
-          </h1>
+          </h2>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
@@ -16,10 +16,10 @@ const Mastersstudents = () => {
               <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Dawei Xu" className="w-full h-full object-contain" />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Dawei Xu
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -28,10 +28,10 @@ const Mastersstudents = () => {
               <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Azizul Hoque" className="w-full h-full object-contain" />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Azizul Hoque
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -40,10 +40,10 @@ const Mastersstudents = () => {
               <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
                 <img src={Img} alt="Srikala Sandu" className="w-full h-full object-contain" />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Srikala Sandu
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -58,10 +58,10 @@ const Mastersstudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Simratkaur Manjindersingh Randhawa
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>

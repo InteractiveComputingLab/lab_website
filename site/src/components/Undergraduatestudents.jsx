@@ -7,9 +7,9 @@ const Undergraduatestudents = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h1 className="text-3xl font-semibold text-black mb-10">
+          <h2 className="text-3xl font-semibold text-black mb-10">
             Undergraduate Student(s)
-          </h1>
+          </h2>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
@@ -21,10 +21,10 @@ const Undergraduatestudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Katherine Espinoza
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -37,10 +37,10 @@ const Undergraduatestudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Zeynep Alta
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -53,10 +53,10 @@ const Undergraduatestudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Ananya Iyer
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -69,10 +69,10 @@ const Undergraduatestudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Nicholas Russo
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>
@@ -85,10 +85,10 @@ const Undergraduatestudents = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Matthew Schmitt
-              </h2>
-              <p className="text-gray-600 text-sm mt-2">
+              </h3>
+              <p className="text-gray-600 text-base mt-2">
                 Research Assistant
               </p>
             </div>

@@ -7,9 +7,9 @@ const Phdstudents = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h1 className="text-3xl font-semibold text-black mb-10">
+          <h2 className="text-3xl font-semibold text-black mb-10">
             Ph.D. Student(s)
-          </h1>
+          </h2>
 
           <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             
@@ -22,12 +22,12 @@ const Phdstudents = () => {
                 />
               </div>
 
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Rifat Rahman Khan
-              </h2>
+              </h3>
 
               <div className="mt-2">
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Research Assistant
                 </p>
               </div>
@@ -42,12 +42,12 @@ const Phdstudents = () => {
                 />
               </div>
 
-              <h2 className="text-xl font-semibold text-black tracking-tight">
+              <h3 className="text-2xl font-semibold text-black tracking-tight">
                 Jiayin Huang
-              </h2>
+              </h3>
 
               <div className="mt-2">
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Research Assistant
                 </p>
               </div>

@@ -7,10 +7,16 @@ import Undergraduatestudents from './Undergraduatestudents'
 const Labmembers = () => {
   return (
     <>
-    <Professors/>
-    <Phdstudents/>
-    <Mastersstudents/>
-    <Undergraduatestudents/>
+      <div className="container mx-auto text-center mt-10">
+        <h1 className="text-4xl font-bold text-black mb-12">
+          Lab Members
+        </h1>
+      </div>
+
+      <Professors/>
+      <Phdstudents/>
+      <Mastersstudents/>
+      <Undergraduatestudents/>
     </>
   )
 }
