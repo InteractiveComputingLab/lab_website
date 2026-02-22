@@ -6,10 +6,12 @@ const Professors = () => {
     <>
       <div className="container mx-auto">
         <div className="text-center">
-          <h1>Professor</h1>
+          <h1 className="text-3xl font-semibold text-black mb-8">
+            Professor
+          </h1>
 
-          <div className="shadow rounded-[20px] p-5 text-left sm:mb-[20px] w-100 mx-auto">
-            <div className="w-full max-w-xl mx-auto aspect-[16/9] overflow-hidden rounded bg-black/5 flex items-center justify-center">
+          <div className="shadow-lg rounded-2xl p-6 text-center sm:mb-6 max-w-md mx-auto bg-white">
+            <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
               <img
                 src={Img}
                 alt="Dr. Jonggi Hong"
@@ -17,10 +19,14 @@ const Professors = () => {
               />
             </div>
 
-            <h2>Dr. Jonggi Hong</h2>
+            <h2 className="text-xl font-semibold text-black tracking-tight">
+              Dr. Jonggi Hong
+            </h2>
 
-            <div className="details">
-              <p className="text-center">Assistant Professor</p>
+            <div className="details mt-2">
+              <p className="text-gray-600 text-sm">
+                Assistant Professor
+              </p>
             </div>
           </div>
         </div>

@@ -5,8 +5,13 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ setPage }) => {
   const [open, setOpen] = useState(false);
+
+  const handleClick = (page) => {
+    setPage(page);
+    setOpen(false);
+  };
 
   return (
     <nav className="bg-black text-white">
@@ -20,19 +25,19 @@ const Navbar = () => {
 
         <ul className="hidden lg:flex items-center gap-6">
           <li>
-            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+            <button onClick={() => handleClick("home")} className="flex items-center gap-2 hover:text-gray-300">
               <FaHome /> Home
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+            <button onClick={() => handleClick("publications")} className="flex items-center gap-2 hover:text-gray-300">
               <IoDocumentTextSharp /> Publications
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+            <button onClick={() => handleClick("lab_members")} className="flex items-center gap-2 hover:text-gray-300">
               <FaPeopleGroup /> Lab Members
-            </a>
+            </button>
           </li>
         </ul>
 
@@ -49,19 +54,19 @@ const Navbar = () => {
         <div className="lg:hidden px-6 pb-4">
           <ul className="flex flex-col gap-4">
             <li>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <button onClick={() => handleClick("home")} className="flex items-center gap-2 hover:text-gray-300">
                 <FaHome /> Home
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <button onClick={() => handleClick("publications")} className="flex items-center gap-2 hover:text-gray-300">
                 <IoDocumentTextSharp /> Publications
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-300">
+              <button onClick={() => handleClick("lab_members")} className="flex items-center gap-2 hover:text-gray-300">
                 <FaPeopleGroup /> Lab Members
-              </a>
+              </button>
             </li>
           </ul>
         </div>
