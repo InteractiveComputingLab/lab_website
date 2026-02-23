@@ -20,7 +20,7 @@ const About = () => {
               education, productivity, and creative expression.
             </p>
 
-            <p className="sm:p-5 text-left text-black">
+            <p className="sm:p-5 text-left">
               We take a user-centered, interdisciplinary approach, combining
               methods from design, engineering, and social sciences to create
               systems that are both technically robust and meaningfully useful.
@@ -30,7 +30,7 @@ const About = () => {
               collaborate, and perform everyday tasks.
             </p>
 
-            <p className="sm:p-5 text-left text-black">
+            <p className="sm:p-5 text-left">
               We collaborate closely with end-users, industry partners, and
               interdisciplinary research teams to ensure our innovations address
               real-world needs and have lasting impact. Through design,
