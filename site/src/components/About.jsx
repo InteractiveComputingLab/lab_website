@@ -10,7 +10,7 @@ const About = () => {
           </header>
 
           <section className="mt-6">
-            <p className="sm:p-5 text-left text-black">
+            <p className="sm:p-5 text-left">
               <span className="text-2xl">T</span>he Interactive Computing Lab at
               Stevens Institute of Technology explores how people interact with
               technology and how technology can be designed to better support,
