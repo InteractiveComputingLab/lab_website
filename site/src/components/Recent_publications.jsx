@@ -3,6 +3,16 @@ import Img from "../assets/academic.png";
 
 const publications = [
   {
+    title: "CatalaBlocks: A Block-Based Visual Tool for Programming the Law",
+    citation:
+      "Nicholas Michael Russo, Matthew Schmitt, Ananya Iyer, Jonggi Hong. 2026. CatalaBlocks: A Block-Based Visual Tool for Programming the Law. Proc. ACM Designing Interactive Systems Conference (DIS 2026).",
+  },
+  {
+    title: "Delay-Buffered Editing for Accessible Slide Presentation Videos",
+    citation:
+      "Azizul Haque, Jonggi Hong. 2026. Delay-Buffered Editing for Accessible Slide Presentation Videos. Proc. ACM Designing Interactive Systems Conference (DIS 2026).",
+  },
+  {
     title:
       "CustomSight: Enhancing LLM-Powered Visual Assistance for Blind Individuals using Goal-Directed Dynamic Filters",
     paperUrl: "https://dl.acm.org/doi/10.1145/3746058.3758401",
@@ -28,14 +38,6 @@ const publications = [
     paperUrl: "https://dl.acm.org/doi/10.1145/3746059.3747801",
     citation:
       "Jisu Yim, Donghyeon Ko, Taeho Kim, Taejun Kim, Jonggi Hong, Geehyuk Lee. 2025. Proc. ACM Symposium on User Interface Software and Technology (UIST 2025).",
-  },
-  {
-    title:
-      "Exploring User Behavior and Validation Proficiency in Assessing Responses from a Conversational Agent",
-    paperUrl:
-      "https://openaccess.cms-conferences.org/publications/book/978-1-964867-73-1/article/978-1-964867-73-1_13",
-    citation:
-      "Jiayin Huang, Jonggi Hong. 2025. Proc. International Conference on Human Interaction & Emerging Technologies (IHIET 2025).",
   },
 ];
 
@@ -68,30 +70,36 @@ const Recent_publications = () => {
                 <div className="flex-1 p-6 bg-gray-100">
                   <div className="flex flex-col gap-3">
                     <h2 className="text-lg font-semibold leading-snug">
-                      <a
-                        href={pub.paperUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline underline-offset-4 decoration-black/30 hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50 rounded"
-                      >
-                        {pub.title}
-                      </a>
+                      {pub.paperUrl ? (
+                        <a
+                          href={pub.paperUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline underline-offset-4 decoration-black/30 hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50 rounded"
+                        >
+                          {pub.title}
+                        </a>
+                      ) : (
+                        pub.title
+                      )}
                     </h2>
 
                     <p className="text-gray-700 text-sm leading-relaxed">
                       {pub.citation}
                     </p>
 
-                    <div className="pt-1">
-                      <a
-                        href={pub.paperUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50"
-                      >
-                        View paper
-                      </a>
-                    </div>
+                    {pub.paperUrl && (
+                      <div className="pt-1">
+                        <a
+                          href={pub.paperUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/50"
+                        >
+                          View paper
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
