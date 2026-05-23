@@ -26,10 +26,10 @@ const Mastersstudents = () => {
 
             <div className="shadow-lg rounded-2xl p-6 bg-white text-center">
               <div className="w-full aspect-[16/9] overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center mb-6">
-                <img src={Img} alt="Azizul Hoque" className="w-full h-full object-contain" />
+                <img src={Img} alt="Azizul Haque" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-semibold text-black tracking-tight">
-                Azizul Hoque
+                Azizul Haque
               </h3>
               <p className="text-gray-600 text-base mt-2">
                 Research Assistant

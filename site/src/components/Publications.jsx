@@ -4,11 +4,13 @@ import Img from "../assets/academic.png";
 const publications = [
   {
     title: "CatalaBlocks: A Block-Based Visual Tool for Programming the Law",
+    paperUrl: "https://doi.org/10.1145/3800645.3813091",
     citation:
       "Nicholas Michael Russo, Matthew Schmitt, Ananya Iyer, Jonggi Hong. 2026. CatalaBlocks: A Block-Based Visual Tool for Programming the Law. Proc. ACM Designing Interactive Systems Conference (DIS 2026).",
   },
   {
     title: "Delay-Buffered Editing for Accessible Slide Presentation Videos",
+    paperUrl: "https://programs.sigchi.org/dis/2026/program/content/257130",
     citation:
       "Azizul Haque, Jonggi Hong. 2026. Delay-Buffered Editing for Accessible Slide Presentation Videos. Proc. ACM Designing Interactive Systems Conference (DIS 2026).",
   },
