@@ -46,9 +46,10 @@ const Footer = () => {
                       href="https://www.linkedin.com/company/iclab-stevens/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="IC Lab LinkedIn"
+                      className="inline-flex items-center gap-2 underline"
                     >
-                      <FaLinkedin />
+                      <FaLinkedin aria-hidden="true" focusable="false" />
+                      <span>LinkedIn</span>
                     </a>
                   </li>
                 </ul>
