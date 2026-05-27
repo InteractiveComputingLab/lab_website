@@ -6,8 +6,7 @@ import About from './components/About'
 import Recent_publications from './components/recent_publications'
 import Publications from './components/Publications'
 import Labmembers from './components/Labmembers'
-import { FaLinkedin, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
+import { FaLinkedin } from "react-icons/fa";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -48,10 +47,17 @@ function App() {
             <div className="sm:mb-[60px]">
               <h3 className="font-semibold text-2xl">Social Media</h3>
               <ul className='flex justify-center gap-4 text-xl'>
-                <li><FaLinkedin /></li>
-                <li><FaTwitterSquare /></li>
-                <li><CiFacebook /></li>
-                <li><FaInstagramSquare /></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/iclab-stevens/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 underline"
+                  >
+                    <FaLinkedin aria-hidden="true" focusable="false" />
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
               </ul>
             </div>
 
