@@ -1,8 +1,5 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
-import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -52,21 +49,6 @@ const Footer = () => {
                       aria-label="IC Lab LinkedIn"
                     >
                       <FaLinkedin />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FaTwitterSquare />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <CiFacebook />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FaInstagramSquare />
                     </a>
                   </li>
                 </ul>

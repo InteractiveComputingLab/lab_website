@@ -3,6 +3,12 @@ import Img from "../assets/academic.png";
 
 const publications = [
   {
+    title:
+      "How Would You Like Your AI to Respond? A Preliminary Study of Emotional Preferences for Chatbot Support Across Life Scenarios",
+    citation:
+      "Jiayin Huang, Dawei Xu, Jonggi Hong. 2026. How Would You Like Your AI to Respond? A Preliminary Study of Emotional Preferences for Chatbot Support Across Life Scenarios. Proc. International Conference on Applied Human Factors and Ergonomics (AHFE 2026).",
+  },
+  {
     title: "CatalaBlocks: A Block-Based Visual Tool for Programming the Law",
     paperUrl: "https://doi.org/10.1145/3800645.3813091",
     citation:
@@ -33,13 +39,6 @@ const publications = [
     paperUrl: "https://dl.acm.org/doi/10.1145/3663547.3759719",
     citation:
       "Azizul Hoque, Jonggi Hong. 2025. Proc. International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2025).",
-  },
-  {
-    title:
-      "Typing Haptically: Towards Enabling Non-auditory Smartphone Text Entry with Haptic Feedback for Blind and Low Vision Users",
-    paperUrl: "https://dl.acm.org/doi/10.1145/3746059.3747801",
-    citation:
-      "Jisu Yim, Donghyeon Ko, Taeho Kim, Taejun Kim, Jonggi Hong, Geehyuk Lee. 2025. Proc. ACM Symposium on User Interface Software and Technology (UIST 2025).",
   },
 ];
 

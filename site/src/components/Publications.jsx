@@ -3,6 +3,12 @@ import Img from "../assets/academic.png";
 
 const publications = [
   {
+    title:
+      "How Would You Like Your AI to Respond? A Preliminary Study of Emotional Preferences for Chatbot Support Across Life Scenarios",
+    citation:
+      "Jiayin Huang, Dawei Xu, Jonggi Hong. 2026. How Would You Like Your AI to Respond? A Preliminary Study of Emotional Preferences for Chatbot Support Across Life Scenarios. Proc. International Conference on Applied Human Factors and Ergonomics (AHFE 2026).",
+  },
+  {
     title: "CatalaBlocks: A Block-Based Visual Tool for Programming the Law",
     paperUrl: "https://doi.org/10.1145/3800645.3813091",
     citation:
