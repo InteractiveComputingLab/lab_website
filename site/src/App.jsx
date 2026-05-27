@@ -42,6 +42,18 @@ function App() {
 
             <div className="sm:mb-[60px]">
               <h3 className="font-semibold text-2xl">Contact Us</h3>
+              <address className="not-italic text-center text-xl leading-relaxed mt-2">
+                <p className="font-medium">Dr. Jonggi Hong</p>
+                <p>Assistant Professor</p>
+                <p>
+                  <a
+                    href="mailto:jhong8@stevens.edu"
+                    className="underline underline-offset-4"
+                  >
+                    jhong8@stevens.edu
+                  </a>
+                </p>
+              </address>
             </div>
 
             <div className="sm:mb-[60px]">
